@@ -507,7 +507,7 @@ body{
         padding: 10px 20px !important;
     }
     #paginainicial{
-        height: 60vh !important;
+        height: 100vh !important;
     }
     #ling1 h1, #ling2 h1{
         white-space: nowrap;
