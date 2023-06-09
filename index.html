@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title> Portfólio </title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script>
+            
+
+            function proximo() {
+                const projetos = document.getElementById("projects");
+                
+                projetos.scroll({
+                    left: projetos.scrollLeft + 235,
+                    behavior:'smooth'
+                });
+
+                
+            }
+
+            function anterior() {
+                const projetos = document.getElementById("projects");
+                
+                projetos.scroll({
+                    left: projetos.scrollLeft - 235,
+                    behavior:'smooth'
+                });
+                
+            }
+			
+			function scrolling(place) {
+                const local = document.getElementById(place);
+                
+                local.scrollIntoView({
+                    behavior:"smooth"
+                });
+            }
+            
+
+
+            window.addEventListener('load', 
+            function() { 
+                const projetos = document.getElementById("projects");
+                
+                projetos.scroll({
+                    left: projetos.scrollLeft + 10,
+                    behavior:'smooth'
+                });
+            }, false);
+            
+			
+
+        </script>
+    </head>
+    
+    
+    
+    <body>
+        
+        <header>
+            <nav class="navigation" id="navigation">
+                <a class="logo"> <img class="logo-img" > </a>
+                <ul class="nav-menu" id="nav-menu">
+                    
+                    <li class="nav-item"><a style="cursor: pointer;" onclick="scrolling('projdiv')" > Projetos </a></li>
+                    <li class="nav-item"><a style="cursor: pointer;" onclick="scrolling('footer')" > Sobre mim </a></li>
+                    <li class="nav-item"><a href="https://github.com/AlanElioterio?tab=repositories"> Repositórios</a></li>
+                </ul>
+                <div class="menu" id="menu">
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                </div>
+            </nav>
+
+        </header>
+        
+        
+        <main>
+
+
+        
+            <section class="home" id="paginainicial">
+                
+                <div class="home-text">
+                    <h4 class="text-h4">Olá, sou Alan Eliotério,</h1>
+                    <h1 class="text-h1">S<a id="letrao">O</a>FTWARE DEVEL<a id="letrao">O</a>PER<span class="pointing">I</span></h1>
+                    
+
+                    <p id="resumo">Sou formado em técnico de Informática, tenho familiaridade com back-end e front-end e estou em busca de mais experiências profissionais em relação à área de tecnologia. Trabalho como estagiário na empresa Embraer e desenvolvo alguns projetos, principalmente na parte de automação.</p>
+                    <a style="cursor: pointer;" onclick="scrolling('footer')" class="home-btn"> Contato </a>
+                        
+                </div>
+                
+            </section>
+            
+
+
+
+        </main>
+
+        <section id="amostras">
+            <div id="ling1">
+                <h1> html CSS python SQL </h1>
+                <h1> html CSS python SQL </h1>
+                <h1> html CSS python SQL </h1>
+                <h1> html CSS python SQL </h1>
+
+            </div>
+            <div id="ling2">
+                <h1> C# java PHP node.js </h1>
+                <h1> C# java PHP node.js </h1>
+                <h1> C# java PHP node.js </h1>
+                <h1> C# java PHP node.js </h1>
+
+            </div>
+            
+        </section>
+
+        <section class="homeproj" id="projdiv">
+            
+            
+
+            <div class="homeproj-text">
+
+                <div class="headerproject">
+                    <div>
+                        <h1 class="text-title">PROJETOS</h1>
+                        <p>Projetos criados com HTML, CSS, JavaScript ou C++</p>
+                        
+                    </div>
+                    
+                    <div>
+                        
+                      <div class="projbtn" onclick="anterior()">
+                        <a style="display: block;">anterior</a>
+                        <i class="fa fa-arrow-left"></i>
+                      </div>
+
+                      <div class="projbtn" onclick="proximo()">
+                        <a style="display:block;">próximo</a>
+                        <i class="fa fa-arrow-right"></i>
+                      </div>
+        
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="shadow">
+              
+                <div class="projetos" id="projects">
+                    
+                    <a href=""><div class="project-photo">
+                        <img src="assets/library.png" alt="Foto de Perfil">
+                    </div></a>
+                    
+                    
+                    <div class="project-photo" >
+                        <img src="assets/embreve1.png" alt="Foto de Perfil">
+                    </div>
+
+                    <div class="project-photo" >
+                        <img src="assets/embreve2.png" alt="Foto de Perfil">
+                    </div>
+
+                    <div class="project-photo" >
+                        <img src="assets/embreve3.png" alt="Foto de Perfil">
+                    </div>
+
+                </div>
+ 
+            
+            
+            </div>
+            
+
+            
+        </section>
+
+        <section class="sobre" id="footer">
+            <div class="profile-photo">
+                <img src="assets/profilephoto.png" alt="Foto de Perfil">
+            </DIV>
+            <div class="text-sobre">
+                <h1 class="text-title">SOBRE MIM</h1>
+                <p>Trabalho com projetos de programação, principalmente na parte de back-end e front-end, e estou em busca de novas experiências profissionais para adquirir conhecimento em novas áreas, tenho formação em técnico de Informática. Atualmente trabalho como estagiário na empresa Embraer, uma empresa de fabricação de aviões, desenvolvendo projetos na parte de programação de softwares. Minhas principais linguagens ao programar são: C#, Python, PHP e JavaScript.</p>
+                
+                <a href="https://www.instagram.com/alaanq_/"><i class="fa fa-instagram" style="font-size:48px;color:white;padding-top: 10px;"></i></a>
+                <a href="https://www.linkedin.com/in/alan-eliot%C3%A9rio-35b1831ba/"><i class="fa fa-linkedin-square" style="font-size:48px;color:white;padding-left: 5px;"></i></a>
+                <a href="https://github.com/AlanElioterio?tab=repositories"><i class="fa fa-github" style="font-size:48px;color:white;padding-left: 5px;"></i></a>
+            </div>
+            
+        </section>
+        <section id="contato">
+            <p>E-mail: <a href="alangcelioterio@gmail.com" style="text-decoration: none;color: grey;">alangcelioterio@gmail.com</a></p>
+            <p style="font-size: 12px;"> Site criado por Alan George - 2023</p>
+
+
+        </section>
+    
+        <script src="script/script.js"></script>
+    </body>
+
+    
+</html>

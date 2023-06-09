@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Krona+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+ 
+}
+
+:root{
+    --purple: #190B36;
+    --white: #fff;
+    --dark: #1a1919;
+    
+}
+body{
+    background-color: black;
+    z-index: 0!important;
+}
+
+.projetos{
+    display: flex; 
+ 
+    width: 100%;
+    overflow: overlay;
+    z-index: 0;
+    
+    
+    
+}
+
+#resumo{
+	max-width: 40rem !important;
+	font-size: 17px !important;
+}
+
+.projetos::-webkit-scrollbar { 
+    width: 10px;
+}
+
+.projetos::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.projetos::-webkit-scrollbar-thumb{
+    background: #2a2c393a;
+    transition: all 2s;
+}
+
+.projetos::-webkit-scrollbar-thumb:hover{
+    background: #4b5aba6d;
+}
+
+.embreve {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    /* transform: translate(-50%, -50%); */
+  }
+
+@-webkit-keyframes AnimationUn {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationUn {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.project-photo img{
+    filter: grayscale(100%);
+    margin: 20px;
+    border-radius: 30px!important;
+    width: 30rem;
+    height: 35rem;
+    box-shadow: 0 0 2px 3px rgba(43, 43, 43, 0.5);
+    
+    transition: 1s;
+    }
+
+    .project-photo-embreve{
+        filter: grayscale(100%);
+        margin: 20px;
+        border-radius: 30px!important;
+        width: 30rem !important;
+        height: 35rem !important;
+        box-shadow: 0 0 2px 3px rgba(43, 43, 43, 0.5);
+        transition: 1s;
+        }
+
+    .project-photo-embreve:hover{
+        filter: grayscale(0%);
+        box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.5);
+    }
+    
+.project-photo img:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.5);
+    }
+
+.project-photo{
+    position: relative;
+}
+#paginainicial{
+    
+    color:var(--white);
+    /* background-size:cover ; */
+
+	height: 100vh;
+
+
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+    /* -webkit-animation: AnimationName 1s ease infinite; */
+    animation: AnimationName 5s infinite;
+
+
+    
+}
+
+#footer{
+    background: url("./backcont.svg");
+    background-size: cover !important;
+    height: 100vh;
+    
+    color: white;
+}
+
+.text-sobre{
+    max-width: 35rem;
+    padding-left: 40px;
+}
+
+@keyframes AnimationName {
+    0%{ background: url("./linhas.svg");}
+    50%{background: url("./linhas2.svg");}
+    100%{background: url("./linhas.svg");}
+}
+
+#letrao{
+    color:#708bd5;
+    font-family: "Krona One";
+    
+}
+
+/* @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} */
+
+
+.profile-photo img{
+    border-radius: 30px;
+    width: 30rem;
+    height: 35rem;
+    box-shadow: 0 0 2px 3px rgba(43, 43, 43, 0.5);
+
+    transition: 1s;
+}
+
+.profile-photo img:hover {
+    width: 30.875rem;
+    height: 36rem;
+    box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.5);
+  }
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.pointing{
+    font-weight: 800;
+    animation: pointing 1s infinite steps(2);
+}
+@keyframes pointing 
+{
+    0%{
+        color:rgb(112 139 213);
+    }
+    100%{
+        opacity: -100%;
+    }
+}
+
+#amostras{
+    
+    color:rgb(27, 27, 28);
+    background-size: cover ;
+    background-color: black;
+    border-color: black;
+    
+    
+}
+
+#projdiv{
+    
+    color:var(--white);
+    background-size: cover ;
+    background: linear-gradient(33deg, rgba(3,4,69,1) 0%, rgba(0,0,0,1) 58%, rgba(0,0,0,1) 100%);
+    
+}
+.projdiv-btn{
+    padding: 15px 45px;
+    background: #363141;
+    
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.projdiv-btn:hover{
+    background: #202e55 ;
+}
+
+
+
+.logo-img{
+
+    height: 2.25rem;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    width: 100%;
+    background:transparent;
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 1;
+    
+    
+    
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+.navigation ul li a{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+
+}
+.navigation ul li a:hover{
+    color: #768bc5;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    
+   
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display:block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--white);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: #4b5e92;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    
+}
+
+.homeproj{
+    width: 100%;
+    
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+.headerproject{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.projbtn {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: rgba(111, 141, 198, 0.493);
+    border-radius: 100px;
+    border: 3px solid rgba(100%,100%,100%,0);
+    border-width: 3px 3px 3px 3px;
+    padding: 5px 60px 5px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Jost";
+    font-weight: 900;
+    font-style: normal;
+    transition: all 1s;
+}
+.projbtn:hover{
+    background: rgba(53, 123, 198, 0.493);
+
+}
+
+.projbtn > div {
+    color: #999999;
+    font-size: 10px;
+    font-family: "Jost";
+    font-weight: initial;
+    font-style: normal;
+    text-align: center;
+    margin: 0px 0px 0px 0px
+}
+.projbtn > i {
+    font-size: 1em;
+    background: rgba(2, 13, 31, 0.399);
+    border-radius: 100px;
+    border: 0px solid transparent;
+    border-width: 0px 13px 13px 0px;
+    padding: 5px 6px 5px 16px;
+    margin: 2px 2px 2px 2px;
+    position: absolute;
+    top: 0px;
+    left: px;
+    bottom: 0px;
+    right: 0px;
+    width: 48px;
+    height: 28px
+}
+.projbtn > .ld {
+    font-size: initial
+}
+
+
+.home-text{
+    max-width: 55rem;
+}
+.homeproj-text h1{
+    font-family: "Krona One";
+}
+
+
+.home-text .text-h4{
+    font-size: 2.5rem;
+    color:white; 
+    margin-bottom: 1rem;
+    font-weight: 300 ;
+    line-height: 2rem;
+}
+.home-text .text-h1{
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    line-height: 6rem;
+    font-weight:600;
+    letter-spacing: -0.7rem;
+    font-family: "Krona One";
+    
+}
+.home-text .text-title{
+    font-family: "Krona One";
+
+}
+.sobre .text-sobre h1{
+    font-family: "Krona One";
+}
+
+#ling1{
+    display: flex !important;
+    font-size: 7rem!important;
+    word-wrap:unset!important;
+    overflow: hidden;
+
+    letter-spacing: -0.5rem!important;
+    min-width: 100%!important;
+    width: 100%!important;
+    white-space: nowrap !important;
+    line-height: 6rem!important;
+
+}
+#ling2{
+    display: flex!important;
+    font-size: 7rem!important;
+    word-wrap:unset!important;
+    overflow: hidden;
+    
+    letter-spacing: -0.5rem!important;
+    min-width: 100%!important;
+    width: 100%!important;
+    white-space: 1px !important;
+    line-height: 6rem!important;
+}
+
+#ling1 h1, #ling2 h1{
+    white-space: nowrap;
+    padding: 0 1rem;
+    font-size: 100px!important;
+    letter-spacing: -1px;
+    animation: linganim 7s linear infinite;
+    position: relative;
+
+   
+}
+
+#ling2 h1{
+    padding-bottom: 1rem;
+}
+
+
+@keyframes linganim {
+    0%{
+        transform: translate(0,0);
+        
+    }
+    100%{
+        transform: translate(-100%,0);
+        
+    }
+    
+}
+.home-text p{
+    margin-bottom: 2.5rem;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: #375199;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #202e55;
+}
+
+#contato{
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width: 840px) { 
+    .text-sobre{
+
+        max-width: 100%;
+    }
+    .text-h4{
+        font-size: 20px !important;
+        margin-bottom: 0px !important;
+    }
+    .text-h1{
+        font-size: 40px !important;
+        
+        letter-spacing: -0.2rem !important;
+        line-height: 2.5rem !important;
+    }
+    .home-text .text-h1{
+        margin-bottom: 0rem;
+    }
+    .home-text p {
+        padding-top: 0px !important;
+        font-size: 10px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .home-btn{
+
+        width: 10px !important;
+        font-size: 12px !important;
+        padding: 10px 20px !important;
+    }
+    #paginainicial{
+        height: 60vh !important;
+    }
+    #ling1 h1, #ling2 h1{
+        white-space: nowrap;
+        padding: 0 1rem;
+        font-size: 50px!important;
+        letter-spacing: -1px;
+        line-height: 60px;
+        animation: linganim 7s linear infinite;
+        position: relative;
+    
+       
+    }
+    .headerproject{
+        display:block;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .sobre{
+        display: inline-table;
+        justify-content: center;
+        text-align: center;
+        height: 100vh !important;
+    }
+    .profile-photo img{
+        filter: grayscale(100%);
+        margin: 20px;
+        border-radius: 30px!important;
+        width: 14.688rem !important;
+        height: 17.125rem !important;
+        box-shadow: 0 0 2px 3px rgba(43, 43, 43, 0.5);
+        
+        transition: 1s;
+        }
+
+    .headerproject div{
+        margin-bottom: 7px;
+    }
+
+
+    .project-photo img{
+        filter: grayscale(100%);
+        margin: 20px;
+        border-radius: 30px!important;
+        width: 14.688rem !important;
+        height: 17.125rem !important;
+        box-shadow: 0 0 2px 3px rgba(43, 43, 43, 0.5);
+        
+        transition: 1s;
+        }
+
+    .text-sobre{
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    
+
+
+
+	#resumo{
+		
+		font-size: 15px !important;
+	}
+
+    
+
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: black;
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+        z-index: 2;
+    }
+    .pointing.ativo{
+        display: none;
+    }
+    .navigation.ativo{
+        
+        background: black;
+        transition: 0.5s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    /* .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 2.5rem;
+    }
+    .home .text-h1{
+        font-size: 4rem;
+        line-height: 3rem;
+
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
+    } */
+}
